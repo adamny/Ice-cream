@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find the best ice cream in Buffalo, NY. Explore locations, flavors, and weekly specials.">
+  <title>Buffalo Ice Cream Finder</title>
+  
+  <!-- Google Fonts: Outfit & Inter for premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS for Maps -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+  <div class="holiday-banner">
+    <span class="emoji">🎆</span>
+    <span>Celebrating 250 Years of Independence! Happy 4th of July! 🇺🇸</span>
+    <span class="emoji">🎆</span>
+  </div>
+  <div class="app-container">
+    <!-- Sidebar for Vendors -->
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <h1>Buffalo Ice Cream</h1>
+        <p>Find the best scoops in the 716.</p>
+      </header>
+      
+      <div id="vendor-list" class="vendor-list">
+        <!-- Vendor cards will be injected here via app.js -->
+      </div>
+      
+      <footer class="sidebar-footer">
+        <p><strong>Disclaimer:</strong> This site is for informational purposes only. We are not affiliated with any of the listed businesses. Hours and flavors are subject to change without notice.</p>
+        <p>&copy; 2026 Buffalo Ice Cream Finder</p>
+      </footer>
+    </aside>
+
+    <!-- Map Container -->
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <!-- Data -->
+  <script src="data.js?v=2"></script>
+  <!-- Application Logic -->
+  <script src="app.js?v=5"></script>
+</body>
+</html>
